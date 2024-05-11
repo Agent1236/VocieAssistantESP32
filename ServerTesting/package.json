@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axiom": "^0.1.6",
+    "axios": "^1.6.8",
+    "express": "^4.19.2",
+    "minimist": "^1.2.8",
+    "optimist": "^0.5.2"
+  }
+}
