@@ -7,18 +7,18 @@
 #include "esp_system.h"
 
 enum MicType {
-  ADMP441,
-  ICS43434,
-  M5GO,
-  M5STACKFIRE
+    ADMP441,
+    ICS43434,
+    M5GO,
+    M5STACKFIRE
 };
 
 class I2S {
-  i2s_bits_per_sample_t BITS_PER_SAMPLE;
-public:
-  I2S(MicType micType);
-  int Read(char* data, int numData);
-  int GetBitPerSample();
+    i2s_bits_per_sample_t BITS_PER_SAMPLE;
+  public:
+    I2S(MicType micType);
+    int Read(char* data, int numData);
+    int GetBitPerSample();
 };
 
-#endif // _I2S_H
+#endif
