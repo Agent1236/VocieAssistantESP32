@@ -1,15 +1,15 @@
 #include "WiFi.h"
 #include "Audio.h"
 
-const char* ssid = "JioFiber-003NV";
-const char* pass = "aloobhindi";
+const char* ssid = SSID;
+const char* pass = PASSWORD;
 
 #define I2S_DOUT    25
 #define I2S_BCLK    27
 #define I2S_LRC     26
 
 Audio audio;
-WiFiServer server(3000);
+WiFiServer server(SERVER_PORT);
 
 void setup()
 {
